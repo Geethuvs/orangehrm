@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Login Suite">
+    <listeners>
+        <listener class-name="com.orangehrm.reports.TestListener"/>
+    </listeners>
+    <test name="functional test">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="com.orangehrm.testscripts.LoginPageTest">
+                <methods>
+                    <include name="verifyLoginPageTitle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
